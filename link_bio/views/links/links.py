@@ -30,6 +30,10 @@ def links() -> rx.Component:
                     languages_icon("sqlite.png","SQLite"),
                     languages_icon("xampp.png","Xampp")
                 ),
+        sub_title("Plus"),
+            auto_layout_icons(
+                    languages_icon("git.png","Git")
+                ),
      #   title("Proyectos"),
       #  link_button("Proyects",
        #             "Proyectos elaborados",
