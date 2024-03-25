@@ -32,7 +32,9 @@ def links() -> rx.Component:
                 ),
         sub_title("Plus"),
             auto_layout_icons(
-                    languages_icon("git.png","Git")
+                    languages_icon("git.png","Git"),
+                    languages_icon("blender.png","Blender"),
+                    languages_icon("adobe_photoshop.png","Photoshop")
                 ),
      #   title("Proyectos"),
       #  link_button("Proyects",
