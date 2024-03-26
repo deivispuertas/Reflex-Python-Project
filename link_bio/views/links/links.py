@@ -34,7 +34,8 @@ def links() -> rx.Component:
             auto_layout_icons(
                     languages_icon("git.png","Git"),
                     languages_icon("blender.png","Blender"),
-                    languages_icon("adobe_photoshop.png","Photoshop")
+                    languages_icon("adobe_photoshop.png","Photoshop"),
+                    languages_icon("vensim_logo.png","Vensim PLE")
                 ),
      #   title("Proyectos"),
       #  link_button("Proyects",

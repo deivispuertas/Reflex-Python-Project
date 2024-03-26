@@ -23,7 +23,7 @@ def index() -> rx.Component:
                 margin_y=Size.BIG.value
             )
         ),
-        footer(),
+        footer()
     )
 
 def about()-> rx.Component:
