@@ -1,5 +1,6 @@
 import reflex as rx
 import datetime
+import link_bio.constants as const
 from link_bio.styles.styles import Size as Size
 
 def footer() -> rx.Component:
@@ -7,7 +8,7 @@ def footer() -> rx.Component:
         rx.chakra.image(src="favicon.ico"),
         rx.chakra.link(
             f"© 2024-{datetime.date.today().year} Frog 🐸 By Deivis Puertas V1.",
-            href="https://reflex.dev/",
+            href=const.REFLEX_URL,
             is_external=True,
             font_size=Size.MEDIUM.value
         ),
