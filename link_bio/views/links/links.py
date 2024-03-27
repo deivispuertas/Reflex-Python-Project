@@ -1,17 +1,20 @@
 import reflex as rx
+import link_bio.constants as const
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title,sub_title
 from link_bio.components.my_languages import languages_icon,auto_layout_icons
+from link_bio.styles.styles import Size as Size
+
 def links() -> rx.Component:
     return rx.chakra.vstack(
         title("Perfiles"),
             link_button("LinkedIn",
                         "Mi Perfil",
-                        "https://www.linkedin.com/in/deivis-luis-puertas-sabino-571752242/"
+                        const.LINKEDIN_URL
             ),
             link_button("GitHub",
                         "Mi Repositorio",
-                        "https://github.com/deivispuertas"
+                        const.GITHUB_URL
             ),          
         title("Mis Habilidades"),
         sub_title("Lenguajes de Programación"),
@@ -45,7 +48,8 @@ def links() -> rx.Component:
         title("Contacto"),
             link_button("Email",
                         "Mi Correo Electrónico",
-                        "mailto:deivispuertas0@gmail.com"
+                        const.GMAIL_URL
             ),
-        width="100%"
+        width="100%",
+        spacing=Size.MEDIUM.value,
     )

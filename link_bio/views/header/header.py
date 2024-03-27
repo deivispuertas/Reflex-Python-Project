@@ -1,4 +1,5 @@
 import reflex as rx
+import link_bio.constants as const
 from link_bio.components.link_icon import link_icon
 from link_bio.styles.styles import Size as Size
 from link_bio.components.info_text import info_text
@@ -13,16 +14,19 @@ def header() -> rx.Component:
                     size="lg"
                 ),
                 rx.chakra.text(
-                    "@deivisdev",
+                    "@deivisdev_science",
                     margin_top="0px !important"
                 ),
                 rx.chakra.hstack(
-                    link_icon("https://www.facebook.com/deivis.puertas"),
-                    link_icon("https://www.instagram.com/deivis_puertas/"),
-                    link_icon("https://twitter.com/Deivis_tk")
+                    link_icon(const.FACEBOOK_URL),
+                    link_icon(const.INSTAGRAM_URL),
+                    link_icon(const.TWITTER_X_URL),
+                    link_icon(const.SPOTIFY_URL),
+                    link_icon(const.TIKTOK_URL)
                 ), 
                 align_items="start",
-            )
+            ),
+            spacing=Size.BIG.value,
         ),
         rx.chakra.flex(
             info_text("+13", "años de experencia"),

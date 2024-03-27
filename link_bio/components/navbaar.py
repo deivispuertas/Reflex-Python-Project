@@ -5,7 +5,7 @@ from link_bio.styles.styles import Size as Size
 def navbar() -> rx.Component:
     return rx.chakra.hstack(
         rx.chakra.text(
-            "deivis_frog"
+            "deivisdev_science"
         ),
         position="sticky",
         bg="lightgray",
