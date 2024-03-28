@@ -17,29 +17,57 @@ def links() -> rx.Component:
                         const.GITHUB_URL
             ),          
         title("Mis Habilidades"),
-        sub_title("Lenguajes de Programación"),
-            auto_layout_icons(
-                    languages_icon("python.png","Python"),
-                    languages_icon("java.png","Java"),
-                    languages_icon("php.png","PHP"),
-                    languages_icon("html.png","HTML"),
-                    languages_icon("css.png","CSS"),
-                ),
-        sub_title("Bases de Datos"),
-            auto_layout_icons(
-                    languages_icon("mongodb.png","MongoDB"),
-                    languages_icon("sql_server.png","SQL Server"),
-                    languages_icon("mysql.png","MySQL"),
-                    languages_icon("sqlite.png","SQLite"),
-                    languages_icon("xampp.png","Xampp")
-                ),
-        sub_title("Plus"),
-            auto_layout_icons(
-                    languages_icon("git.png","Git"),
-                    languages_icon("blender.png","Blender"),
-                    languages_icon("adobe_photoshop.png","Photoshop"),
-                    languages_icon("vensim_logo.png","Vensim PLE")
-                ),
+            sub_title("Lenguajes de Programación"),
+                auto_layout_icons(
+                        languages_icon("python.png",
+                                       "Python"
+                        ),
+                        languages_icon("java.png",
+                                       "Java"
+                        ),
+                        languages_icon("php.png"
+                                       ,"PHP"
+                        ),
+                        languages_icon("html.png",
+                                       "HTML"
+                        ),
+                        languages_icon("css.png"
+                                       ,"CSS"
+                        ),
+                    ),
+            sub_title("Bases de Datos"),
+                auto_layout_icons(
+                        languages_icon("mongodb.png",
+                                       "MongoDB"
+                        ),
+                        languages_icon("sql_server.png",
+                                       "SQL Server"
+                        ),
+                        languages_icon("mysql.png",
+                                       "MySQL"
+                        ),
+                        languages_icon("sqlite.png",
+                                       "SQLite"
+                        ),
+                        languages_icon("xampp.png",
+                                       "Xampp"
+                        )
+                    ),
+            sub_title("Plus"),
+                auto_layout_icons(
+                        languages_icon("git.png"
+                                       ,"Git"
+                        ),
+                        languages_icon("blender.png",
+                                       "Blender"
+                        ),
+                        languages_icon("adobe_photoshop.png",
+                                       "Photoshop"
+                        ),
+                        languages_icon("vensim_logo.png",
+                                       "Vensim PLE"
+                        )
+                    ),
      #   title("Proyectos"),
       #  link_button("Proyects",
        #             "Proyectos elaborados",

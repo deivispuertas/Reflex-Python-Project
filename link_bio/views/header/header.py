@@ -29,11 +29,11 @@ def header() -> rx.Component:
             spacing=Size.BIG.value,
         ),
         rx.chakra.flex(
-            info_text("+13", "años de experencia"),
+            info_text("+1", "Año de experiencia"),
             rx.chakra.spacer(),
-            info_text("+13", "años de experencia"),
+            info_text("+3", "Certificados"),
             rx.chakra.spacer(),
-            info_text("+13", "años de experencia"),
+            info_text("+1", "Proyecto público"),
             width="100%"
         ),
         rx.chakra.text("""Soy Ingeniero de Sistemas e Informática que esta por culminar la carrera.

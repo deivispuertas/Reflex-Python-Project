@@ -1,6 +1,6 @@
 import reflex as rx
 from enum import Enum
-
+from .colors import Color as Color
 
 # Constans
 MAX_WIDTH="560px"
@@ -15,7 +15,8 @@ class Size(Enum):
 
 # Styles
 
-BASE_STYLE={    
+BASE_STYLE={ 
+    "background_color": Color.BACKGROUND.value,   
     rx.chakra.button:{
         "width": "100%",
         "height": "100%",

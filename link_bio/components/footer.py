@@ -2,6 +2,7 @@ import reflex as rx
 import datetime
 import link_bio.constants as const
 from link_bio.styles.styles import Size as Size
+from link_bio.styles.colors import Color as Color
 
 def footer() -> rx.Component:
     return rx.chakra.vstack(
@@ -17,6 +18,7 @@ def footer() -> rx.Component:
             font_size=Size.MEDIUM.value,
             margin_top="0px !important"
         ),
-        margin_bottom=Size.BIG.value
+        align="center",
+        padding_bottom="9",
     )
 
