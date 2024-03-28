@@ -1,8 +1,8 @@
 import reflex as rx
 import datetime
 import link_bio.constants as const
-from link_bio.styles.styles import Size as Size
-from link_bio.styles.colors import Color as Color
+from link_bio.styles.styles import Size,Spacing
+from link_bio.styles.colors import Color
 
 def footer() -> rx.Component:
     return rx.chakra.vstack(
@@ -16,9 +16,12 @@ def footer() -> rx.Component:
         rx.chakra.text(
             "This entire website was created using Reflex-Python with ♥ from Perú to the world ",
             font_size=Size.MEDIUM.value,
-            margin_top="0px !important"
+            margin_top= Size.ZERO.value
         ),
         align="center",
-        padding_bottom="9",
+        padding_bottom=Size.VERY_BIG.value,
+        padding_y= Size.VERY_BIG.value,
+        padding_x=Size.BIG.value,
+        spacing=Spacing.SMALL.value,
     )
 

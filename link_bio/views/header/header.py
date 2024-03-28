@@ -15,7 +15,7 @@ def header() -> rx.Component:
                 ),
                 rx.chakra.text(
                     "@deivisdev_science",
-                    margin_top="0px !important"
+                    margin_top=Size.ZERO.value
                 ),
                 rx.chakra.hstack(
                     link_icon(const.FACEBOOK_URL),
