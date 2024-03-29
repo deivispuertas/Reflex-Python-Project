@@ -1,11 +1,12 @@
 import reflex as rx
-import link_bio.styles.styles as styles
+from link_bio.styles.styles import Size as Size
 
-def link_icon(url: str) -> rx.Component:
+def link_icon(image:str, url: str) -> rx.Component:
     return rx.chakra.link(
-        rx.icon(
-            tag="link"
+        rx.image(
+            src= image,
+            width= Size.LARGE.value
         ),
-        href=url,
-        is_external=True
+        href= url,
+        is_external= True
     )

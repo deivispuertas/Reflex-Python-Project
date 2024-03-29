@@ -32,12 +32,14 @@ def about()-> rx.Component:
 
 
 app = rx.App(
+    stylesheets=styles.STYLESHEETS,
     style=styles.BASE_STYLE
 )
 app.add_page(
         index,
         title="Deivis Puertas | Programación y Data Science",
-        image="reflexlogo.png"
+        description= "Hola, mi nombre es Deivis Puertas. Soy Estudiante de  Ingeniería de Sistemas e Informática, ahora estoy aprendiendo el lenguaje python y desarrolle mi website usando el lenguaje Python con Reflex.",
+        image="frog.ico"
 )
 app.add_page(about)
 # app.compile() reflex ya no lo requiere ahora es automático

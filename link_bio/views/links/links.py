@@ -11,11 +11,13 @@ def links() -> rx.Component:
             link_button(
                     "LinkedIn",
                     "Mi Perfil",
+                    "icons/linkedin.svg",
                     const.LINKEDIN_URL
             ),
             link_button(
                     "GitHub",
                     "Mi Repositorio",
+                    "icons/github.svg",
                     const.GITHUB_URL
             ),          
         title("Mis Habilidades"),
@@ -92,6 +94,7 @@ def links() -> rx.Component:
         title("Contacto"),
             link_button("Email",
                         "Mi Correo Electrónico",
+                        "icons/email.svg",
                         const.GMAIL_URL
             ),
         width="100%",

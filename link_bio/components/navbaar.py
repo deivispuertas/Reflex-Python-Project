@@ -7,8 +7,8 @@ from link_bio.styles.colors import Color
 def navbar() -> rx.Component:
     return rx.chakra.hstack(
         rx.chakra.box(
-            rx.chakra.span("deivisdev", color= Color.PRIMARY.value),
-            rx.chakra.span("_science", color=Color.SECONDARY.value),
+            rx.chakra.span("dev", color= Color.PRIMARY.value),
+            rx.chakra.span("puertas", color=Color.PRIMARY.value),
             style= styles.navbar_title_style
         ),
         position="sticky",

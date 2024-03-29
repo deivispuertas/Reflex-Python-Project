@@ -19,7 +19,7 @@ def header() -> rx.Component:
                     bg= Color.CONTENT.value,
                     padding= "2px",
                     border= "4px",
-                    border_color= Color.PRIMARY.value
+                    border_color= Color.SECONDARY.value
 
             ),
             rx.chakra.vstack(
@@ -28,26 +28,32 @@ def header() -> rx.Component:
                     size="lg"
                 ),
                 rx.chakra.text(
-                    "@deivisdev_science",
+                    "@devpuertas",
                     margin_top= Size.ZERO.value,
                     color= Txtcolor.BODY.value
                 ),
                 rx.chakra.hstack(
                     link_icon(
+                        "icons/facebook.svg",
                         const.FACEBOOK_URL
                     ),
                     link_icon(
+                        "icons/instagram.svg",
                         const.INSTAGRAM_URL
                     ),
                     link_icon(
+                        "icons/x-twitter.svg",
                         const.TWITTER_X_URL
                     ),
                     link_icon(
+                        "icons/spotify.svg",
                         const.SPOTIFY_URL
                     ),
                     link_icon(
+                        "icons/tiktok.svg",
                         const.TIKTOK_URL
-                    )
+                    ),
+                    spacing=Size.BIG.value,
                 ), 
                 align_items="start",
             ),

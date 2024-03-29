@@ -2,14 +2,14 @@ import reflex as rx
 import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size as Size
 
-def link_button(title: str,body: str, url: str) -> rx.Component:
+def link_button(title: str,body: str, image:str,url: str) -> rx.Component:
     return rx.chakra.link(
         rx.chakra.button(
             rx.chakra.hstack(
-                rx.chakra.icon(
-                    tag= "arrow_forward",
-                    width= styles.Size.BIG.value,
-                    height= styles.Size.BIG.value,
+                rx.chakra.image(
+                    src=image,
+                    width= Size.BIG.value,
+                    height= Size.BIG.value,
                     margin= Size.MEDIUM.value
                 ),
                 rx.chakra.vstack(

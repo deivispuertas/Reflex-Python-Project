@@ -14,7 +14,7 @@ def languages_icon(image: str,language: str) -> rx.Component:
                     rx.chakra.vstack(
                         rx.text(
                             language,
-                            style= styles.button_body_style,
+                            style= styles.languaje_body_style,
                             font_size= Size.SEMIDEFAULT.value,
                             as_= "b",
                             align= "center"
