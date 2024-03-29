@@ -8,6 +8,7 @@ def title(text: str) -> rx.Component:
                 size="lg", 
                 style=styles.title_style
           )
+
 def sub_title(text:str) -> rx.Component:
    return rx.chakra.vstack(
             rx.chakra.heading(

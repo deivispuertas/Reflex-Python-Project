@@ -18,9 +18,10 @@ def index() -> rx.Component:
             rx.chakra.vstack(
                 header(),
                 links(),
-                max_width=styles.MAX_WIDTH,
+                max_width= styles.MAX_WIDTH,
                 width="100%",
-                margin_y=Size.BIG.value
+                margin_y= Size.LARGE.value,
+                padding= Size.BIG.value
             )
         ),
         footer()

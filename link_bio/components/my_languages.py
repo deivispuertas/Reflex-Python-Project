@@ -12,23 +12,43 @@ def languages_icon(image: str,language: str) -> rx.Component:
                         margin_bottom=Size.DEFAULT.value
                     ),
                     rx.chakra.vstack(
-                        rx.text(language,style=styles.button_body_style,font_size=Size.SEMIDEFAULT.value,as_="b"),
-                        align_items="center"
+                        rx.text(
+                            language,
+                            style= styles.button_body_style,
+                            font_size= Size.SEMIDEFAULT.value,
+                            as_= "b",
+                            align= "center"
+                        )
                     ),
-                width="100%",   
+                width= "100%"  
             )
-        )
+        ),
+        justify_content="center"
     )
 
 def auto_layout_icons(*icons: rx.Component, max_per_row: int = 5) -> rx.Component:
-    rows = [rx.chakra.flex(
-                *icons[i:i+max_per_row],gap="40px", margin_bottom=Size.MEDIUM.value,margin_top=Size.DEFAULT.value) for i in range(0, len(icons),
-                max_per_row)]
-    return rx.chakra.vstack(
-                rx.chakra.flex(
-                    *rows,
-                    flex_wrap="wrap", 
-                    width="100%"
-                ),
-                align_items="center",
+    rows = []
+    for i in range(0, len(icons), max_per_row):
+        row_icons = icons[i:i + max_per_row]
+        if len(row_icons) == 1:  # Si hay solo una imagen en la fila
+            row = rx.chakra.flex(
+                *row_icons,
+                gap="40px",
+                margin_bottom=Size.MEDIUM.value,
+                margin_top=Size.DEFAULT.value,
+                align_items="center",  # Centra verticalmente la única imagen en la fila
+                justify_content="center"  # Centra horizontalmente la única imagen en la fila
             )
+        else:
+            row = rx.chakra.flex(
+                *row_icons,
+                gap="40px",
+                margin_bottom=Size.MEDIUM.value,
+                margin_top=Size.DEFAULT.value
+            )
+        rows.append(row)
+    return rx.chakra.vstack(
+        *rows,
+        flex_wrap="wrap",
+        width="100%"
+    )

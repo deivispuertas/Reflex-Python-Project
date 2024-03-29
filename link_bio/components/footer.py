@@ -3,25 +3,31 @@ import datetime
 import link_bio.constants as const
 from link_bio.styles.styles import Size,Spacing
 from link_bio.styles.colors import Color
+from link_bio.styles.colors import TextColor as Txtcolor
 
 def footer() -> rx.Component:
     return rx.chakra.vstack(
-        rx.chakra.image(src="favicon.ico"),
+        rx.chakra.image(
+            src="reflexlogo.png",
+            height=Size.BIG.value,
+            bg=Txtcolor.HEADER.value,
+            padding="2px",
+            border="4px",
+        ),
         rx.chakra.link(
             f"© 2024-{datetime.date.today().year} Frog 🐸 By Deivis Puertas V1.",
-            href=const.REFLEX_URL,
+            href= const.REFLEX_URL,
             is_external=True,
-            font_size=Size.MEDIUM.value
+            font_size= Size.MEDIUM.value,
+            margin_top= Size.LARGE.value
         ),
         rx.chakra.text(
-            "This entire website was created using Reflex-Python with ♥ from Perú to the world ",
-            font_size=Size.MEDIUM.value,
-            margin_top= Size.ZERO.value
+            "This entire website was created using Reflex-Python with 💚 from Perú to the world ",
+            font_size= Size.MEDIUM.value,
+            margin_top= Size.ZERO.value,
+            padding_x= Size.LARGE.value
         ),
-        align="center",
-        padding_bottom=Size.VERY_BIG.value,
         padding_y= Size.VERY_BIG.value,
-        padding_x=Size.BIG.value,
-        spacing=Spacing.SMALL.value,
+        spacing= Spacing.SMALL.value,
+        color= Txtcolor.FOOTER.value
     )
-

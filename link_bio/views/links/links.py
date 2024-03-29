@@ -8,49 +8,65 @@ from link_bio.styles.styles import Size as Size
 def links() -> rx.Component:
     return rx.chakra.vstack(
         title("Perfiles"),
-            link_button("LinkedIn",
-                        "Mi Perfil",
-                        const.LINKEDIN_URL
+            link_button(
+                    "LinkedIn",
+                    "Mi Perfil",
+                    const.LINKEDIN_URL
             ),
-            link_button("GitHub",
-                        "Mi Repositorio",
-                        const.GITHUB_URL
+            link_button(
+                    "GitHub",
+                    "Mi Repositorio",
+                    const.GITHUB_URL
             ),          
         title("Mis Habilidades"),
             sub_title("Lenguajes de Programación"),
                 auto_layout_icons(
-                        languages_icon("python.png",
-                                       "Python"
+                        languages_icon(
+                                "python.png",
+                                "Python"
                         ),
-                        languages_icon("java.png",
-                                       "Java"
+                        languages_icon(
+                                "java.png",
+                                "Java"
                         ),
-                        languages_icon("php.png"
-                                       ,"PHP"
+                        languages_icon(
+                                "php.png",
+                                "PHP"
                         ),
-                        languages_icon("html.png",
-                                       "HTML"
+                        languages_icon(
+                                "html.png",
+                                "HTML"
                         ),
-                        languages_icon("css.png"
-                                       ,"CSS"
+                        languages_icon(
+                                "css.png",
+                                "CSS"
                         ),
                     ),
             sub_title("Bases de Datos"),
                 auto_layout_icons(
-                        languages_icon("mongodb.png",
-                                       "MongoDB"
+                        languages_icon(
+                                "mongodb.png",
+                                "MongoDB"
                         ),
-                        languages_icon("sql_server.png",
-                                       "SQL Server"
+                        languages_icon(
+                                "sql_server.png",
+                                "SQL Server"
                         ),
-                        languages_icon("mysql.png",
-                                       "MySQL"
+                        languages_icon(
+                                "mysql.png",
+                                "MySQL"
                         ),
-                        languages_icon("sqlite.png",
-                                       "SQLite"
+                        languages_icon(
+                                "sqlite.png",
+                                "SQLite"
                         ),
-                        languages_icon("xampp.png",
-                                       "Xampp"
+                        languages_icon(
+                                "xampp.png",
+                                "Xampp"
+                        ),
+                        languages_icon(
+                                "oracle.png",
+                                "Oracle"
                         )
                     ),
             sub_title("Plus"),
