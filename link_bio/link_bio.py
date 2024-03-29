@@ -34,7 +34,11 @@ def about()-> rx.Component:
 app = rx.App(
     style=styles.BASE_STYLE
 )
-app.add_page(index)
+app.add_page(
+        index,
+        title="Deivis Puertas | Programación y Data Science",
+        image="reflexlogo.png"
+)
 app.add_page(about)
 # app.compile() reflex ya no lo requiere ahora es automático
 """
