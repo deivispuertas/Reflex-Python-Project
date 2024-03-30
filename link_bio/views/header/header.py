@@ -68,8 +68,8 @@ def header() -> rx.Component:
         ),
         rx.chakra.flex(
             info_text(
-                "+100", 
-                "Horas de Estudio"
+                "+13", 
+                "Promedio Tercio Superior"
             ),
             rx.chakra.spacer(),
             info_text(
@@ -80,6 +80,11 @@ def header() -> rx.Component:
             info_text(
                 "+3", 
                 "Certificados"
+            ),
+            rx.chakra.spacer(),
+            info_text(
+                "+2", 
+                "Idiomas"
             ),
             width="100%"
         ),
