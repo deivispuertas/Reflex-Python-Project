@@ -8,11 +8,13 @@ from link_bio.styles.colors import TextColor as Txtcolor
 def footer() -> rx.Component:
     return rx.chakra.vstack(
         rx.chakra.image(
-            src="reflexlogo.png",
-            height=Size.BIG.value,
-            bg=Txtcolor.HEADER.value,
-            padding="2px",
-            border="4px",
+            src= "reflexlogo.png",
+            height= Size.BIG.value,
+            weight= Size.VERY_BIG.value,
+            bg= Txtcolor.HEADER.value,
+            alt= "Logotipo de Reflex. El nombre de la aplicación dentro de un casillero",
+            padding= "2px",
+            border= "4px",
         ),
         rx.chakra.link(
             f"© 2024-{datetime.date.today().year} Frog 🐸 By Deivis Puertas V1.",

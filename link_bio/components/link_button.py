@@ -10,7 +10,8 @@ def link_button(title: str,body: str, image:str,url: str) -> rx.Component:
                     src=image,
                     width= Size.BIG.value,
                     height= Size.BIG.value,
-                    margin= Size.MEDIUM.value
+                    margin= Size.MEDIUM.value,
+                    alt= title
                 ),
                 rx.chakra.vstack(
                     rx.text(
@@ -21,10 +22,13 @@ def link_button(title: str,body: str, image:str,url: str) -> rx.Component:
                         body,
                         style= styles.button_body_style
                     ),
+                    align_items="start",
                     spacing= Size.SMALL.value,
-                    align_items= "start",
-                    margin = Size.ZERO.value
-                )
+                    margin = Size.ZERO.value,
+                    padding_y= Size.SMALL.value,
+                    padding_right= Size.SMALL.value
+                ),
+                width= "100%"
             )
         ),
         href=url,

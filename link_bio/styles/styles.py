@@ -16,6 +16,7 @@ STYLESHEETS= [
 
 class Size(Enum):
     ZERO = "0px !important"
+    MICRO = "0.3em"
     SMALL= "0.5em"
     MEDIUM= "0.8em"
     SEMIDEFAULT= "0.9em"
@@ -56,8 +57,11 @@ BASE_STYLE={
         "border_radius": Size.DEFAULT.value,
         "color": Txtcolor.HEADER.value,
         "background_color": Color.CONTENT.value,
+        "white_space": "normal",
+        "text_align": "start",
         "_hover":{
             "background_color": Color.SECONDARY.value,
+            "color": Color.CONTENT.value
         }
     },
     rx.chakra.link: {
@@ -95,7 +99,7 @@ button_tittle_style = dict(
 button_body_style = dict(
     font_weight= FontWeight.LIGTH.value,
     font_size= Size.MEDIUM.value,
-    color= Txtcolor.CONTENT.value
+    color= Color.PRIMARY.value 
 )
 
 languaje_body_style = dict(

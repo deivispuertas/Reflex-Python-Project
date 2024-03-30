@@ -4,7 +4,7 @@ import link_bio.constants as const
 from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
 from link_bio.components.title import title
-from link_bio.styles.styles import Size as Size
+from link_bio.styles.styles import Size,Spacing
 from link_bio.styles.colors import TextColor as Txtcolor
 from link_bio.styles.colors import Color 
 
@@ -20,7 +20,6 @@ def header() -> rx.Component:
                     padding= "2px",
                     border= "4px",
                     border_color= Color.SECONDARY.value
-
             ),
             rx.chakra.vstack(
                 rx.chakra.heading(
@@ -35,29 +34,37 @@ def header() -> rx.Component:
                 rx.chakra.hstack(
                     link_icon(
                         "icons/facebook.svg",
-                        const.FACEBOOK_URL
+                        const.FACEBOOK_URL,
+                        "Facebook"
                     ),
                     link_icon(
                         "icons/instagram.svg",
-                        const.INSTAGRAM_URL
+                        const.INSTAGRAM_URL,
+                        "Instagram"
                     ),
                     link_icon(
                         "icons/x-twitter.svg",
-                        const.TWITTER_X_URL
+                        const.TWITTER_X_URL,
+                        "Twitter/X"
                     ),
                     link_icon(
                         "icons/spotify.svg",
-                        const.SPOTIFY_URL
+                        const.SPOTIFY_URL,
+                        "Spotify"
                     ),
                     link_icon(
                         "icons/tiktok.svg",
-                        const.TIKTOK_URL
+                        const.TIKTOK_URL,
+                        "Tiktok"
                     ),
-                    spacing=Size.BIG.value,
-                ), 
-                align_items="start",
+                    spacing= Spacing.BIG.value,
+                    padding_top= Size.SMALL.value
+                ),
+                spacing=Spacing.ZERO.value,
+                align_items="start"
             ),
-            spacing=Size.BIG.value,
+            align="end",
+            spacing=Spacing.DEFAULT.value
         ),
         rx.chakra.flex(
             info_text(
@@ -79,7 +86,7 @@ def header() -> rx.Component:
         rx.chakra.text(
                    """
                    Soy Ingeniero de Sistemas e Informática que esta por culminar la carrera.
-                   Actualmente estoy aprendiendo el Lenguaje de Python para desempeñarme en
+                   Actualmente estoy aprendiendo el Lenguaje de Python, quiero trabajar en
                    el ámbito de la Programación y el Data science. Aquí podras encontrar 
                    información para contactarme !Bienvenid@s!
                    """,
