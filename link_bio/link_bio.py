@@ -8,8 +8,8 @@ from link_bio.styles.styles import Size as Size
 
 
 
-class State(rx.State):
-    pass
+#class State(rx.State):
+#    pass
 
 def index() -> rx.Component:
    return rx.chakra.box(   
