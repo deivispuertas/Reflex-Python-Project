@@ -90,16 +90,19 @@ def header() -> rx.Component:
         ),
         rx.chakra.text(
                    """
-                   Soy Ingeniero de Sistemas e Informática que esta por culminar la carrera.
-                   Actualmente estoy aprendiendo el Lenguaje de Python, quiero trabajar en
-                   el ámbito de la Programación y el Data science. Aquí podras encontrar 
-                   información para contactarme !Bienvenid@s!
+                   Soy Estudiante de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
+                   la Universidad Nacional "Santiago Antúnez de Mayolo", que esta por culminar la carrera.
+                   Actualmente estoy aprendiendo el Lenguaje de Python, quiero trabajar en el ámbito de 
+                   la Programación y el Data science. Aquí podras encontrar información para contactarme 
+                   !Bienvenid@s!
                    """,
-                   font_size= Size.MEDIUM.value,
-                   color= Txtcolor.BODY.value
+                   font_size= Size.SEMIDEFAULT.value,
+                   color= Txtcolor.BODY.value,
+                   #as_="i"
          ),
         spacing=Size.BIG.value,
-        align_items="start" 
+        align_items="start",
+        justify_content="center"
     )
 
 def experience() -> int:

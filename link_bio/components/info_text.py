@@ -14,9 +14,9 @@ def info_text(title: str, body: str) -> rx.Component:
             ),
             f" {body}", 
             font_size=Size.MEDIUM.value,
-            color=Txtcolor.BODY.value,
+            color=Txtcolor.BODY.value
         ),
-        width="33.33%",
+        width="25%",
         direction="column",
         align="center",
         justify_content="center",

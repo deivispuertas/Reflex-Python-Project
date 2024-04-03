@@ -24,7 +24,7 @@ def footer() -> rx.Component:
             margin_top= Size.LARGE.value
         ),
         rx.chakra.text(
-            "This entire website was created using Reflex-Python with 💚 from Perú to the world ",
+            "This entire website was created using Reflex-Chakra-Python with 💚 from Perú to the world ",
             font_size= Size.MEDIUM.value,
             margin_top= Size.ZERO.value,
             padding_x= Size.LARGE.value
