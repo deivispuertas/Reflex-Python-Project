@@ -91,9 +91,9 @@ def header() -> rx.Component:
         rx.chakra.text(
                    """
                    Soy Estudiante de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
-                   la Universidad Nacional "Santiago Antúnez de Mayolo", que esta por culminar la carrera.
-                   Actualmente estoy aprendiendo el Lenguaje de Python, quiero trabajar en el ámbito de 
-                   la Programación y el Data science. Aquí podras encontrar información para contactarme 
+                   la Universidad Nacional "Santiago Antúnez de Mayolo", de decimo cilo.Actualmente estoy 
+                   aprendiendo el Lenguaje de Python, quiero trabajar en el ámbito de la Programación y 
+                   el Data science. Aquí podras encontrar información para contactarme 
                    !Bienvenid@s!
                    """,
                    font_size= Size.SEMIDEFAULT.value,
