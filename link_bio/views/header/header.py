@@ -73,8 +73,8 @@ def header() -> rx.Component:
         ),
         rx.chakra.flex(
             info_text(
-                "+13", 
-                "Promedio Tercio Superior"
+                "+5 meses", 
+                "Exp. Laboral"
             ),
             rx.chakra.spacer(),
             info_text(
@@ -96,7 +96,7 @@ def header() -> rx.Component:
         rx.chakra.text(
                    """
                    Egresado de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
-                   la Universidad Nacional "Santiago Antúnez de Mayolo", del Decimo Ciclo. Actualmente estoy 
+                   la Universidad Nacional "Santiago Antúnez de Mayolo". Actualmente estoy 
                    especializandome en el ambito de Análisis de Datos, Data Science con Python y Desarrollo 
                    de Sotfware. Aquí podras encontrar información para contactarme.
                    !Bienvenid@s!
