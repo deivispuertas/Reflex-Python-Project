@@ -98,7 +98,7 @@ def header() -> rx.Component:
                    Egresado de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
                    la Universidad Nacional "Santiago Antúnez de Mayolo". Actualmente estoy 
                    especializandome en el ambito de Análisis de Datos, Data Science con Python y Desarrollo 
-                   de Sotfware. Aquí podras encontrar información para contactarme.
+                   de Software. Aquí podras encontrar información para contactarme.
                    !Bienvenid@s!
                    """,
                    font_size= Size.SEMIDEFAULT.value,
