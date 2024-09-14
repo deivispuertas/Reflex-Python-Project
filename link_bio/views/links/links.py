@@ -69,8 +69,35 @@ def links() -> rx.Component:
                         languages_icon(
                                 "oracle.png",
                                 "Oracle"
+                        ),
+                        languages_icon(
+                            "postgre.png",
+                            "Postgre SQL"
                         )
                     ),
+            sub_title('Softwares de Análisis'),
+                auto_layout_icons(
+                        languages_icon(
+                            "powerbi.png",
+                            "Power BI"
+                        ),
+                        languages_icon(
+                            "tableau.png",
+                            "Tableau"
+                        ),
+                        languages_icon(
+                            "googleanalytics.png",
+                            "Google Analytics"
+                        ),
+                        languages_icon(
+                            "googlecolab.png",
+                            "Google Colab"
+                        ),
+                        languages_icon(
+                            "jupyter.png",
+                            "Jupyter"
+                        ),
+                ),
             sub_title("Plus"),
                 auto_layout_icons(
                         languages_icon("git.png"

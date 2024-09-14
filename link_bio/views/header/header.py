@@ -48,6 +48,11 @@ def header() -> rx.Component:
                         "Twitter/X"
                     ),
                     link_icon(
+                        "icons/linkedin.svg",
+                        const.LINKEDIN_URL,
+                        "Linkedin"
+                    ),
+                    link_icon(
                         "icons/spotify.svg",
                         const.SPOTIFY_URL,
                         "Spotify"
@@ -78,7 +83,7 @@ def header() -> rx.Component:
             ),
             rx.chakra.spacer(),
             info_text(
-                "+3", 
+                "+13", 
                 "Certificados"
             ),
             rx.chakra.spacer(),
@@ -90,15 +95,15 @@ def header() -> rx.Component:
         ),
         rx.chakra.text(
                    """
-                   Soy Estudiante de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
+                   Egresado de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
                    la Universidad Nacional "Santiago Antúnez de Mayolo", del Decimo Ciclo. Actualmente estoy 
-                   aprendiendo el Lenguaje de Python. Deseo trabajar en el ámbito de la Programación y 
-                   el Data science. Aquí podras encontrar información para contactarme 
+                   especializandome en el ambito de Análisis de Datos, Data Science con Python y Desarrollo 
+                   de Sotfware. Aquí podras encontrar información para contactarme.
                    !Bienvenid@s!
                    """,
                    font_size= Size.SEMIDEFAULT.value,
                    color= Txtcolor.BODY.value,
-                   #as_="i"
+                   text_align="justify"
          ),
         spacing=Size.BIG.value,
         align_items="start",
