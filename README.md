@@ -1,6 +1,6 @@
 # DevPuertas Web 🌐
 
-Bienvenido a **DevPuertas Web**, una plataforma innovadora desarrollada con **Reflex** en **Python**. Este proyecto tiene como objetivo [describir brevemente el propósito de tu aplicación, como conectar usuarios, ofrecer servicios, etc.].
+Bienvenido a **DevPuertas Web**, una plataforma innovadora desarrollada con **Reflex** en **Python**. Este proyecto tiene como objetivo de poder aprender a desarrollar paginas Web en este caso como pagina presentadome como Profesional, lo cual lo realice siguiendo ah Mouredev el cual me pudo enseñar a poder realizar mi pagina web estatita con python.
 
 ## Demo 🎥
 
