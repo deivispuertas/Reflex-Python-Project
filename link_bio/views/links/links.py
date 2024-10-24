@@ -4,9 +4,10 @@ from link_bio.components.link_button import link_button
 from link_bio.components.title import title,sub_title
 from link_bio.components.my_languages import languages_icon,auto_layout_icons
 from link_bio.styles.styles import Size as Size
+import reflex_chakra as chakra
 
 def links() -> rx.Component:
-    return rx.chakra.vstack(
+    return chakra.vstack(
         title("Perfiles"),
             link_button(
                     "LinkedIn",

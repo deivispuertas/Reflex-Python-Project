@@ -7,11 +7,12 @@ from link_bio.components.title import title
 from link_bio.styles.styles import Size,Spacing
 from link_bio.styles.colors import TextColor as Txtcolor
 from link_bio.styles.colors import Color 
+import reflex_chakra as chakra
 
 def header() -> rx.Component:
-    return rx.chakra.vstack(
-        rx.chakra.hstack(
-            rx.chakra.avatar(
+    return chakra.vstack(
+        chakra.hstack(
+            chakra.avatar(
                     name= "Deivis Puertas", 
                     size= "2xl",
                     src= "avatar.jpg",  
@@ -21,17 +22,17 @@ def header() -> rx.Component:
                     border= "4px",
                     border_color= Color.SECONDARY.value
             ),
-            rx.chakra.vstack(
-                rx.chakra.heading(
+            chakra.vstack(
+                chakra.heading(
                     "Deivis Puertas 🐸",
                     size="lg"
                 ),
-                rx.chakra.text(
+                chakra.text(
                     "@devpuertas",
                     margin_top= Size.ZERO.value,
                     color= Txtcolor.BODY.value
                 ),
-                rx.chakra.hstack(
+                chakra.hstack(
                     link_icon(
                         "icons/facebook.svg",
                         const.FACEBOOK_URL,
@@ -71,29 +72,29 @@ def header() -> rx.Component:
             align="end",
             spacing=Spacing.DEFAULT.value
         ),
-        rx.chakra.flex(
+        chakra.flex(
             info_text(
                 "+5 meses", 
                 "Exp. Laboral"
             ),
-            rx.chakra.spacer(),
+            chakra.spacer(),
             info_text(
                 "+1", 
                 "Proyecto Público"
             ),
-            rx.chakra.spacer(),
+            chakra.spacer(),
             info_text(
                 "+13", 
                 "Certificados"
             ),
-            rx.chakra.spacer(),
+            chakra.spacer(),
             info_text(
                 "+2", 
                 "Idiomas"
             ),
             width="100%"
         ),
-        rx.chakra.text(
+        chakra.text(
                    """
                    Egresado de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
                    la Universidad Nacional "Santiago Antúnez de Mayolo". Actualmente estoy 

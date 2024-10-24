@@ -1,19 +1,20 @@
 import reflex as rx
 import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size as Size
+import reflex_chakra as chakra
 
 def link_button(title: str,body: str, image:str,url: str) -> rx.Component:
-    return rx.chakra.link(
-        rx.chakra.button(
-            rx.chakra.hstack(
-                rx.chakra.image(
+    return chakra.link(
+        chakra.button(
+            chakra.hstack(
+                chakra.image(
                     src=image,
                     width= Size.BIG.value,
                     height= Size.BIG.value,
                     margin= Size.MEDIUM.value,
                     alt= title
                 ),
-                rx.chakra.vstack(
+                chakra.vstack(
                     rx.text(
                         title,
                         style= styles.button_tittle_style

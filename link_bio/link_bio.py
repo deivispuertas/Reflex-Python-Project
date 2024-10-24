@@ -5,17 +5,17 @@ from link_bio.views.links.links import links
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size as Size
-
+import reflex_chakra as chakra
 
 
 #class State(rx.State):
 #    pass
 
 def index() -> rx.Component:
-   return rx.chakra.box(   
+   return chakra.box(   
         navbar(),
-        rx.chakra.center(
-            rx.chakra.vstack(
+        chakra.center(
+            chakra.vstack(
                 header(),
                 links(),
                 max_width= styles.MAX_WIDTH,
@@ -28,7 +28,7 @@ def index() -> rx.Component:
     )
 
 def about()-> rx.Component:
-    return rx.chakra.text("About Page")
+    return chakra.text("About Page")
 
 
 app = rx.App(
