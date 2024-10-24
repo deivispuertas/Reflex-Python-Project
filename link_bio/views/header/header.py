@@ -38,31 +38,31 @@ def header() -> rx.Component:
                         const.FACEBOOK_URL,
                         "Facebook"
                     ),
-                    link_icon(
-                        "icons/instagram.svg",
-                        const.INSTAGRAM_URL,
-                        "Instagram"
-                    ),
+                    # link_icon(
+                    #     "icons/instagram.svg",
+                    #     const.INSTAGRAM_URL,
+                    #     "Instagram"
+                    # ),
                     link_icon(
                         "icons/x-twitter.svg",
                         const.TWITTER_X_URL,
                         "Twitter/X"
                     ),
-                    link_icon(
-                        "icons/linkedin.svg",
-                        const.LINKEDIN_URL,
-                        "Linkedin"
-                    ),
+                    # link_icon(
+                    #     "icons/linkedin.svg",
+                    #     const.LINKEDIN_URL,
+                    #     "Linkedin"
+                    # ),
                     link_icon(
                         "icons/spotify.svg",
                         const.SPOTIFY_URL,
                         "Spotify"
                     ),
-                    link_icon(
-                        "icons/tiktok.svg",
-                        const.TIKTOK_URL,
-                        "Tiktok"
-                    ),
+                    # link_icon(
+                    #     "icons/tiktok.svg",
+                    #     const.TIKTOK_URL,
+                    #     "Tiktok"
+                    # ),
                     spacing= Spacing.BIG.value,
                     padding_top= Size.SMALL.value
                 ),
