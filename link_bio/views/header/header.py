@@ -74,17 +74,17 @@ def header() -> rx.Component:
         ),
         chakra.flex(
             info_text(
-                "+5 meses", 
+                "+8 meses", 
                 "Exp. Laboral"
             ),
             chakra.spacer(),
             info_text(
-                "+1", 
+                "+4", 
                 "Proyecto Público"
             ),
             chakra.spacer(),
             info_text(
-                "+13", 
+                "+50", 
                 "Certificados"
             ),
             chakra.spacer(),
@@ -96,10 +96,10 @@ def header() -> rx.Component:
         ),
         chakra.text(
                    """
-                   Egresado de la Carrera Profesional de Ingeniería de Sistemas e Informática de 
+                   Bachiller de Ingeniería de Sistemas e Informática de 
                    la Universidad Nacional "Santiago Antúnez de Mayolo". Actualmente estoy 
                    especializandome en el ambito de Análisis de Datos, Data Science con Python y Desarrollo 
-                   de Software. Aquí podras encontrar información para contactarme.
+                   Web. Aquí podras encontrar información para contactarme.
                    !Bienvenid@s!
                    """,
                    font_size= Size.SEMIDEFAULT.value,

@@ -38,7 +38,7 @@ app = rx.App(
 app.add_page(
         index,
         title="Deivis Puertas | Programación y Data Science",
-        description= "Hola, mi nombre es Deivis Puertas. Soy Estudiante de  Ingeniería de Sistemas e Informática, ahora estoy aprendiendo el lenguaje python y desarrolle mi website usando el lenguaje Python con Reflex.",
+        description= "Hola, mi nombre es Deivis Puertas. Bachiller de  Ingeniería de Sistemas e Informática, con conocimientos en el Análisis de Datos y el Desarrollo Web.",
         image="frog.ico"
 )
 app.add_page(about)
