@@ -1,8 +1,9 @@
+# Archivos de entorno
 *.db
 *.py[cod]
-.web
-__pycache__/
-assets/external/venv/
-# Archivos de entorno
 .env
 .env.*
+.web
+__pycache__/
+assets/external/
+assets/external/venv/
