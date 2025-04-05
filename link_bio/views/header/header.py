@@ -79,8 +79,8 @@ def header() -> rx.Component:
             ),
             chakra.spacer(),
             info_text(
-                "+4", 
-                "Proyecto Público"
+                "+7", 
+                "Proyectos Públicos"
             ),
             chakra.spacer(),
             info_text(
@@ -96,7 +96,7 @@ def header() -> rx.Component:
         ),
         chakra.text(
                    """
-                   Bachiller de Ingeniería de Sistemas e Informática de 
+                   Bachiller en Ingeniería de Sistemas e Informática de 
                    la Universidad Nacional "Santiago Antúnez de Mayolo". Actualmente estoy 
                    especializandome en el ambito de Análisis de Datos, Data Science con Python y Desarrollo 
                    Web. Aquí podras encontrar información para contactarme.
