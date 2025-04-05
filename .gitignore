@@ -3,3 +3,6 @@
 .web
 __pycache__/
 assets/external/venv/
+# Archivos de entorno
+.env
+.env.*
