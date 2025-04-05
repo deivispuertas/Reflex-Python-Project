@@ -3,6 +3,7 @@ from enum import Enum
 from .colors import Color as Color
 from .colors import TextColor as Txtcolor
 from .fonts import Font, FontWeight
+import reflex_chakra as chakra
 
 # Constans
 MAX_WIDTH="560px"
@@ -44,12 +45,12 @@ BASE_STYLE={
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGTH.value,
     "background_color": Color.BACKGROUND.value,  
-    rx.chakra.heading: {
+    chakra.heading: {
         "color": Txtcolor.HEADER.value,
         "font_family": Font.TITLE.value,
         "font_weight": FontWeight.MEDIUM.value,
     }, 
-    rx.chakra.button:{
+    chakra.button:{
         "width": "100%",
         "height": "100%",
         "display": "block",
@@ -64,7 +65,7 @@ BASE_STYLE={
             "color": Color.CONTENT.value
         }
     },
-    rx.chakra.link: {
+    chakra.link: {
         "text_decoration": "none",
         "_hover": {}
     }

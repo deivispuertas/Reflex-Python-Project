@@ -8,8 +8,8 @@ import reflex_chakra as chakra
 def navbar() -> rx.Component:
     return chakra.hstack(
         chakra.box(
-            rx.chakra.span("dev", color= Color.PRIMARY.value),
-            rx.chakra.span("puertas", color=Color.PRIMARY.value),
+            chakra.span("dev", color= Color.PRIMARY.value),
+            chakra.span("puertas", color=Color.PRIMARY.value),
             style= styles.navbar_title_style
         ),
         position="sticky",
