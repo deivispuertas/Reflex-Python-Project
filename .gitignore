@@ -1,8 +1,8 @@
 # Archivos de entorno
 *.db
 *.py[cod]
-.venv
-.venv.*
+.env
+.env.*
 .venv/
 .web
 __pycache__/
