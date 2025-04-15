@@ -19,4 +19,4 @@ REFLEX_URL= "https://reflex.dev/"
 GMAIL_URL= "mailto:deivispuertas0@gmail.com"
 
 #CV
-CV_URL = "/documents/CV_Puertas_2025.pdf"
+CV_URL = "/documents/CV_puertas_web.pdf"

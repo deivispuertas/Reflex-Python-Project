@@ -23,8 +23,8 @@ def links() -> rx.Component:
                 ),
                 link_button(
                         "CV",
-                        "Mi Curriculum Vitae",
-                        "icons/email.svg",
+                        "Mi Curriculum Vitae",  
+                        "icons/filepdf.svg",
                         const.CV_URL
                 ),          
                 title("Mis Habilidades"),
