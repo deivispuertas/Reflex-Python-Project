@@ -17,3 +17,6 @@ REFLEX_URL= "https://reflex.dev/"
 
 #SEND EMAIL -  REFLEX
 GMAIL_URL= "mailto:deivispuertas0@gmail.com"
+
+#CV
+CV_URL = "/documents/CV_Puertas_2025.pdf"
