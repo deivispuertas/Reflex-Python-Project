@@ -20,13 +20,7 @@ def links() -> rx.Component:
                         "Mi Repositorio",
                         "icons/github.svg",
                         const.GITHUB_URL
-                ),
-                link_button(
-                        "CV",
-                        "Mi Curriculum Vitae",  
-                        "icons/filepdf.svg",
-                        const.CV_URL
-                ),          
+                ),         
                 title("Mis Habilidades"),
                 sub_title("Lenguajes de Programación"),
                         auto_layout_icons(
@@ -125,12 +119,18 @@ def links() -> rx.Component:
         #             "Proyectos elaborados",
                 #            "/about"
                 #           ),
-                title("Contacto"),
+                title("Contactos"),
                 link_button("Email",
                         "Mi Correo Electrónico",
                         "icons/email.svg",
                         const.GMAIL_URL
                 ),
+                link_button(
+                        "CV",
+                        "Mi Curriculum Vitae",  
+                        "icons/filepdf.svg",
+                        const.CV_URL
+                ), 
                 # title("Curriculum Vitae"),
                 width="100%",
                 spacing=Size.MEDIUM.value,
