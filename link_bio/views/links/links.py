@@ -125,12 +125,6 @@ def links() -> rx.Component:
                         "icons/email.svg",
                         const.GMAIL_URL
                 ),
-                link_button(
-                        "CV",
-                        "Mi Curriculum Vitae",  
-                        "icons/filepdf.svg",
-                        const.CV_URL
-                ), 
                 # title("Curriculum Vitae"),
                 width="100%",
                 spacing=Size.MEDIUM.value,
